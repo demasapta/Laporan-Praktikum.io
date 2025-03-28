@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Praktikum</title>
+    <style>
+         body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 12px;
+            line-height: 1.15;
+            margin: 2cm;
+            text-align: justify;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black; 
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+ <h1>Laporan Praktikum</h1>
+ <h2>Soal Teori</h2>
+ <h3>Pertanyaan seputar tag</h3>
+ <ol>
+ <li><b>Apa yang dimaksud dengan tag pada HTML?</b><br>Tag 
+dalam HTML adalah elemen yang digunakan untuk menentukan struktur dan 
+format suatu dokumen web.</li>
+ <li><b>Apa itu pembuka dan penutup tag? Apakah hal tersebut terdapat 
+pada semua jenis tag?</b><br>Tag pembuka digunakan untuk memulai 
+elemen, sedangkan tag penutup digunakan untuk menutupnya. Tidak semua 
+tag memiliki tag penutup, misalnya &lt;br&gt; atau &lt;img&gt;.</li>
+ </ol>
+ <h3>Pertanyaan seputar elemen</h3>
+ <ol>
+ <li><b>Apa yang dimaksud dengan elemen?</b><br>Elemen adalah 
+keseluruhan struktur dalam HTML yang terdiri dari tag pembuka, isi, dan tag 
+penutup.</li>
+ <li><b>Apa yang dimaksud dengan tagname, attribute dan content pada 
+elemen?</b><br>Tagname adalah nama tag, attribute adalah properti 
+tambahan, dan content adalah isi dari elemen.</li>
+ <li><b>Apakah elemen dapat ditumpuk? Apa yang terjadi bila 
+demikian?</b><br>Elemen dapat ditumpuk (nested), tetapi harus sesuai 
+aturan HTML agar tidak menyebabkan kesalahan dalam tampilan.</li>
+ </ol>
+ <h3>Pertanyaan seputar anchor</h3>
+ <ol>
+ <li><b>Apa yang dimaksud dengan anchor?</b><br>Anchor adalah 
+elemen HTML yang digunakan untuk membuat hyperlink ke halaman lain 
+atau bagian lain dalam halaman yang sama.</li>
+ <li><b>Bagaimana caranya anchor dapat berfungsi, baik dari sisi 
+pendefinisian ataupun pengaplikasiannya?</b><br>Anchor ditentukan 
+dengan tag &lt;a&gt; dan atribut href untuk menentukan tujuan link. Contoh: 
+&lt;a href="https://example.com"&gt;Klik di sini&lt;/a&gt;.</li>
+ </ol>
+ <h3>Pertanyaan seputar multimedia</h3>
+ <h4>A. Text</h4>
+ <ol>
+ <li><b>Sebutkan tag yang dapat digunakan untuk memanipulasi konten 
+teks pada HTML, serta jelaskan fungsinya secara singkat!</b><br>Contoh: 
+&lt;b&gt; untuk teks tebal, &lt;i&gt; untuk teks miring, &lt;u&gt; untuk teks 
+bergaris bawah.</li>
+ <li><b>Sebutkan tag yang dapat digunakan untuk memanipulasi 
+struktur konten teks pada HTML!</b><br>Contoh: &lt;p&gt; untuk paragraf, 
+&lt;h1&gt;-&lt;h6&gt; untuk heading, &lt;br&gt; untuk baris baru.</li>
+ </ol>
+ <h4>B. Image</h4>
+ <ol>
+ <li><b>Apabila sebuah tag image tidak menampilkan gambar 
+sebagaimana seharusnya, apa saja yang mungkin menyebabkan hal 
+tersebut?</b><br>File gambar tidak ditemukan, URL salah, atau format 
+gambar tidak didukung.</li>
+ <li><b>Apabila ternyata ada teks yang menggantikan gambar tersebut, 
+apa yang sebenarnya terjadi?</b><br>Teks alternatif (alt) yang ditentukan 
+dalam tag &lt;img&gt; akan muncul jika gambar tidak dapat dimuat.</li>
+ </ol>
+ <h4>C. Audio</h4>
+ <ol>
+ <li><b>Bagaimana caranya untuk kita dapat memasukkan audio source 
+dari web (non-lokal)?</b><br>Gunakan tag &lt;audio&gt; dengan atribut src 
+yang berisi URL audio. Contoh: &lt;audio controls 
+src="https://example.com/audio.mp3"&gt;&lt;/audio&gt;.</li>
+ </ol>
+ <h4>D. Video</h4>
+ <ol>
+ <li><b>Apa yang biasanya terjadi apabila atribut autoplay pada tag 
+video tidak berjalan? Apa yang anda harus lakukan sehingga atribut tersebut 
+dapat berfungsi dengan semestinya?</b><br>Autoplay mungkin diblokir 
+oleh browser karena kebijakan penggunaan. Solusinya adalah menambahkan 
+atribut muted agar video bisa diputar otomatis.</li>
+ </ol>
+
+ <h2>Data Teman Favorit</h2>
+<table>
+    <tr>
+        <th>No</th>
+        <th>NIM</th>
+        <th>Nama</th>
+        </tr>
+        <tr>
+        <td>1</td>
+        <td>202332094</td>
+        <td>Ghaitsa Amalia</td>
+        </tr>
+        <tr>
+        <td>2</td>
+        <td>202332101</td>
+        <td>Evelyna Beatrice Cayza Jelita</td>
+        </tr>
+        <tr>
+        <td>3</td>
+        <td>202332031</td>
+        <td>Amanda Nurfadilah</td>
+        </tr>
+        <tr>
+        <td>4</td>
+        <td>202332044</td>
+        <td>Benaya Josrael Tualangi</td>
+        </tr>
+        <tr>
+        <td>5</td>
+        <td>202332096</td>
+        <td>Hasvan Wijaya Pratama</td>
+        </tr>
+       </table>
+       <h2>Form Data Mahasiswa</h2>
+ <form action="FINISH.gif" method="get">
+ <label for="nama">Nama:</label>
+ <input type="text" id="nama" name="nama" required><br><br>
+ <label for="nim">NIM:</label>
+ <input type="text" id="nim" name="nim" required><br><br>
+ <label for="jurusan">Jurusan:</label>
+ <input type="text" id="jurusan" name="jurusan" required><br><br>
+ <button type="submit">Submit</button>
+ </form>
+</body>
+</html>
